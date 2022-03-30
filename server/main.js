@@ -14,10 +14,10 @@ console.log(get('messages'));
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    form.message.value = '';
     set('messages',{
         sender: form2.name.value,
         content: form.message.value,
         date: new Date().getTime()
-    })
+    });
+    form.message.value = '';
 });
