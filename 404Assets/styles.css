@@ -1,0 +1,37 @@
+h1 {
+    font-family: 'Etho';
+}
+.container {
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container p {
+    font-size: 1em;
+    font-family: 'Etho';
+    color: #fff;
+}
+.container a {
+    color: #09b0f2;
+}
+.container a:hover {
+    color: #09b0f2;
+}
+.container a:visited {
+    color: #09b0f2;
+}
+.container a:active {
+    color: #09b0f2;
+}
+.container a:focus {
+    color: #49ddc1;
+}
+.container a:hover {
+    color: #49ddc1;
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Etho';
+    src: url('./fonts/ethnocentric.rg-regular.ttf');
+}
+html {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #37393e;
+}
