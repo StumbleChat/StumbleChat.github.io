@@ -14,6 +14,7 @@ live('messages');
 form2.addEventListener('submit', (e) => {
     console.log("Name Confirmed");
     e.preventDefault();
+    e.stopImmediatePropagation()
     if (form2.name.value) {
         form2.style.display = 'none';
         document.getElementById('mainDiv').style.display = 'block';
@@ -28,6 +29,7 @@ form2.addEventListener('submit', (e) => {
 form.addEventListener('submit', (e) => {
     console.log("Sent");
     e.preventDefault();
+    e.stopImmediatePropagation()
     if (form2.name.value && form.message.value) {
         set('messages',{
             sender: form2.name.value,
