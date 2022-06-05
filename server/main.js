@@ -12,6 +12,7 @@ window.onload = function() {
 live('messages');
 
 form2.addEventListener('submit', (e) => {
+    console.log("Name Confirmed");
     e.preventDefault();
     if (form2.name.value) {
         form2.style.display = 'none';
@@ -25,6 +26,7 @@ form2.addEventListener('submit', (e) => {
 })
 
 form.addEventListener('submit', (e) => {
+    console.log("Sent");
     e.preventDefault();
     if (form2.name.value && form.message.value) {
         set('messages',{
