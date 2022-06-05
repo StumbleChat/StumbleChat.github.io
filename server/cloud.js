@@ -33,13 +33,19 @@ export function live(table) {
     
         li.setAttribute('data-id', "a" + doc.id);
         li.setAttribute('class', 'field');
+
+        Sender.id = "sender";
+        Content.id = "content";
     
-        Sender.textContent = "Sender: " + doc.data().sender + "\n";
-        Content.textContent = "Content: " + doc.data().content;
+        Sender.textContent = /*"Sender: " + */doc.data().sender + "\n";
+        Content.textContent = /*"Content: " + */doc.data().content;
     
         li.appendChild(Sender);
         li.appendChild(Content);
     
         mainDiv.appendChild(li);
+
+        const scroll = document.getElementById('mainDiv');
+        scroll.scroll({ top: scroll.scrollHeight, behavior: 'smooth'});
     }
 }
